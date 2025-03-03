@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Lou Creemers - Portfolio</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <style>
+        .project-card {
+            transition: transform 0.3s;
+        }
+        .project-card:hover {
+            transform: scale(1.05);
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+        <div class="container">
+            <a class="navbar-brand" href="#">Lou Creemers</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item"><a class="nav-link" href="#about">About</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#projects">Projects</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#blog">Blog</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#contact">Contact</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <header class="bg-primary text-white text-center py-5">
+        <div class="container">
+            <h1>Hey, I'm Lou! 👋</h1>
+            <p class="lead">Microsoft MVP | .NET & TypeScript Developer | Community Advocate</p>
+        </div>
+    </header>
+
+    <!-- About Section -->
+    <section id="about" class="py-5">
+        <div class="container">
+            <h2 class="text-center mb-4">About Me</h2>
+            <div class="row">
+                <div class="col-md-7">
+                    <p>I'm a web developer based in **Rotterdam, The Netherlands**, with experience in **.NET and TypeScript**.</p>
+                    <p>With **20+ projects** under my belt, I specialize in **C#, backend development**, and building robust web applications. I’m passionate about **helping the developer community and knowledge sharing**.</p>
+                    <p>Since **April 2023**, I’ve been a proud **Microsoft MVP in Developer Technologies**! 🎉</p>
+                </div>
+                <div class="col-md-5">
+                    <h4>My Current Stack 💻</h4>
+                    <ul>
+                        <li>C#</li>
+                        <li>.NET</li>
+                        <li>Python</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Projects Section -->
+    <section id="projects" class="py-5 bg-light">
+        <div class="container">
+            <h2 class="text-center mb-4">Projects</h2>
+            <div class="row">
+                <div class="col-md-4">
+                    <div class="card project-card">
+                        <img src="https://via.placeholder.com/400" class="card-img-top" alt="Project 1">
+                        <div class="card-body">
+                            <h5 class="card-title">.NET Open Source Contributions</h5>
+                            <p class="card-text">Contributed to various open-source .NET libraries and projects.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="card project-card">
+                        <img src="https://via.placeholder.com/400" class="card-img-top" alt="Project 2">
+                        <div class="card-body">
+                            <h5 class="card-title">TypeScript API for Devs</h5>
+                            <p class="card-text">A TypeScript-based API to simplify developer workflows.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="card project-card">
+                        <img src="https://via.placeholder.com/400" class="card-img-top" alt="Project 3">
+                        <div class="card-body">
+                            <h5 class="card-title">Secure SSH Key Generator</h5>
+                            <p class="card-text">A tool for creating secure SSH keys for Windows & Mac users.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Blog Section -->
+    <section id="blog" class="py-5">
+        <div class="container">
+            <h2 class="text-center mb-4">My Latest Blog Posts</h2>
+            <ul class="list-group">
+                <li class="list-group-item">
+                    <a href="https://lovelacecoding.hashnode.dev/getting-started-in-the-net-open-source-community-a-beginners-guide" target="_blank">
+                        Getting Started in the .NET Open Source Community: A Beginner’s Guide
+                    </a>
+                </li>
+                <li class="list-group-item">
+                    <a href="https://lovelacecoding.hashnode.dev/how-to-build-your-first-python-game" target="_blank">
+                        How to Build Your First Python Game
+                    </a>
+                </li>
+                <li class="list-group-item">
+                    <a href="https://lovelacecoding.hashnode.dev/secure-your-coding-create-an-ssh-key-on-mac-or-windows" target="_blank">
+                        Secure Your Coding: Create an SSH Key on Mac or Windows
+                    </a>
+                </li>
+                <li class="list-group-item">
+                    <a href="https://lovelacecoding.hashnode.dev/modern-c-development-get-started-with-timeonly" target="_blank">
+                        Modern C# Development: Get Started With TimeOnly
+                    </a>
+                </li>
+            </ul>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="py-5 bg-light text-center">
+        <div class="container">
+            <h2>Connect with Me</h2>
+            <p>Feel free to reach out or follow me online!</p>
+            <a href="https://hashnode.com/@lovelacecoding" class="btn btn-primary me-2" target="_blank">Hashnode</a>
+            <a href="https://www.linkedin.com/in/louelladev/" class="btn btn-primary me-2" target="_blank">LinkedIn</a>
+            <a href="https://twitter.com/lovelacecoding" class="btn btn-primary" target="_blank">Twitter</a>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-dark text-white text-center py-3">
+        <p class="mb-0">© 2025 Lou Creemers. All rights reserved.</p>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
